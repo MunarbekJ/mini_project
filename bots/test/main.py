@@ -18,7 +18,7 @@ def aaaa(message):
 
 @bot.message_handler(content_types=['sticker'])
 bot bbbb(message):
-    bot.send_sticker(message.chat.id, message)
+    bot.send_sticker(message.chat.id, message.sticker)
 
 
 bot.polling()
