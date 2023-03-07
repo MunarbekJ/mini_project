@@ -1,7 +1,7 @@
 import telebot
+from decouple import config
 
-
-token = CONFIG('TOKEN')
+token = config('TOKEN')
 
 bot = telebot.TeleBot(token)
 
@@ -17,7 +17,7 @@ def aaaa(message):
 
 
 @bot.message_handler(content_types=['sticker'])
-bot bbbb(message):
+def bbbb(message):
     bot.send_sticker(message.chat.id, message.sticker)
 
 

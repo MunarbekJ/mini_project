@@ -1,5 +1,5 @@
 pytelegrambotapi
 beautifulsoup4
 requests
-python-decuble
-
+python-decouple
+lxml
